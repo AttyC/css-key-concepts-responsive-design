@@ -36,6 +36,10 @@ h3 {
     font-size: 1.15rem;
 }
 
+.summary-text {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
    body {
  background: deeppink;
@@ -49,6 +53,10 @@ h3 {
     h3 {
         font-size: 1.5rem;
     }
+    .summary-text {
+    display: flex;
+}
+
 }
 
 @media screen and (min-width: 1000px) {
