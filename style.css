@@ -13,19 +13,28 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   padding: 20px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .bglight {
   background-color: var(--light);
 }
 
+.img-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
 img {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 h1,
@@ -33,12 +42,15 @@ h2,
 h3 {
   font-family: 'Caprasimo', cursive;
 }
+
 h1 {
   font-size: 1rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.15rem;
 }
@@ -52,9 +64,11 @@ h3 {
   h1 {
     font-size: 2.75rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.5rem;
   }
@@ -62,25 +76,30 @@ h3 {
   .card-container {
     justify-content: space-around;
   }
+
   .summary-text {
     display: flex;
   }
+
   img {
     max-width: 300px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-    /* section {
+
+  /* section {
   width: 85vw;
   margin: auto;
 } */
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 2.25rem;
   }
+
   h3 {
     font-size: 1.75rem;
   }
@@ -90,6 +109,7 @@ h3 {
   background: #fff0eb;
   color: #130303;
 }
+
 @media (prefers-color-scheme: dark) {
   .cat-theme.adaptive {
     background: #130303;
