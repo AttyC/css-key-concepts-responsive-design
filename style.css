@@ -1,81 +1,98 @@
 :root {
-    --coral: #F05D5E;
-    --teal: #0F7173;
-    --light: #E7ECEF;
-    --dark: #272932;
-    --camel: #D8A47F;
+  --coral: #f05d5e;
+  --teal: #0f7173;
+  --light: #e7ecefa7;
+  --dark: #272932;
+  --camel: #d8a47f;
 }
 
 body {
-    background-color: var(--light);
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-    padding: 10px;
-    margin: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.bglight {
+  background-color: var(--light);
 }
 
 img {
-    width: 250px;
+  max-width: 200px;
 }
 
-h1, h2, h3 {font-family: 'Caprasimo', cursive;}
+h1,
+h2,
+h3 {
+  font-family: 'Caprasimo', cursive;
+}
 h1 {
-    font-size: 2.25rem;
+  font-size: 1rem;
 }
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 h3 {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }
 
 .summary-text {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
-    h1 {
-        font-size: 2.75rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    .summary-text {
-    display: flex;
-}
 
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    justify-content: space-around;
+  }
+  .summary-text {
+    display: flex;
+  }
+  img {
+    max-width: 300px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2.25rem;
-    }
-    h3 {
-        font-size: 1.75rem;
-    }
+    /* section {
+  width: 85vw;
+  margin: auto;
+} */
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
 }
 
 .cat-theme {
-  background: #FFF0EB;
+  background: #fff0eb;
   color: #130303;
 }
 @media (prefers-color-scheme: dark) {
   .cat-theme.adaptive {
-    background:#130303;
-    color: #FFCDBC;
+    background: #130303;
+    color: #ffcdbc;
   }
 }
